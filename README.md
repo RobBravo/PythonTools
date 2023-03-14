@@ -17,3 +17,5 @@ Este Script permite cargar una base de datos desde un archivo txt o csv a una ba
 
 
 ## Transformador de archivos TXT a CSV
+
+Permite convertir un archivo de base de datos en txt separado por tabulador a un archivo csv separado por coma
