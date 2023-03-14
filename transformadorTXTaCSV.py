@@ -2,8 +2,8 @@ import csv
 import os
 
 # Define el nombre de tu archivo de entrada y salida
-input_file = "C:\\Users\\roberto.bravo\\Documents\\BI\\Tarjeta\\CierreFacturacionHist\\LISTADO_MOVIMIENTOS_COMBINADO_FINAL.txt"
-output_file = 'C:\\Users\\roberto.bravo\\Documents\\BI\\Tarjeta\\FacturacionTarjetas.csv'
+input_file = "Directorio del archivo origen a convertir" # En caso de correr el script en windows usar \\ en lugar de /
+output_file = "Directorio del archivo destino"
 
 try:
     # Verificar si el archivo de salida ya existe
