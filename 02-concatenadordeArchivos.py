@@ -1,13 +1,22 @@
 import os
 import sys
+from datetime import date
+from datetime import timedelta
 
 print("CONCATENADOR DE ARCHIVOS - BLACKZERO")
 print("------------------------------------")
 
-MES_INI=202303
-MES_FIN=202313
+# Mes en curso 
+dias = 1
+hoy = date.today()
+filedate = str(hoy - timedelta(days=dias))
+anio = filedate[:4]
+mes = filedate[5:7]
+dia = filedate[8:10]
+MesIni = anio + mes 
+MesFin = anio + str(13)
 
-for i in range(MES_INI, MES_FIN): #rango de fechas en donde los primeros cuatros digitos representa el año y los otros dos elmes
+for i in range(int(MesIni), int(MesFin)): #rango de fechas en donde los primeros cuatros digitos representa el año y los otros dos elmes
     fecha = str(i)
 
     # Ruta de la carpeta de entrada donde se encuentran los archivos de texto
